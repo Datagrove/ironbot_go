@@ -61,3 +61,7 @@ func CertifyBot(fn CertifyFn) error {
 		os.Stdout.Write(append(b, byte('\n')))
 	}
 }
+
+func AnswerBot[In any, Out any](fn func(in *In, out *Out)) {
+
+}
